@@ -23,7 +23,11 @@ def get_last_push(username):
 for user_name in user_names:
     last_time = get_last_push(user_name)
     users_last_activity[user_name] = last_time
-# print(users_last_activity)
+
+
+
+import json
+print(json.dumps(users_last_activity,sort_keys=True, indent=4))
 
 
 
